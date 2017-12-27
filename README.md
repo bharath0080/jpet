@@ -59,4 +59,3 @@ Running JPetStore sample under Tomcat (using the [cargo-maven2-plugin](https://c
 - Run application in browser http://localhost:8080/jpetstore/ 
 - Press Ctrl-C to stop the server.
 # Press Ctrl-C to stop the server.
-# Press Ctrl-C to stop the server.
