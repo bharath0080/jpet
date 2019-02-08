@@ -231,3 +231,10 @@
 </project>
 
 mvn --batch-mode release:clean  release:prepare   release:perform
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM /var/lib/jenkins/workspace/Release/parent/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</plugin>\n\t\t\t<groupId>... @138:13)  @ line 138, column 13
+ @ 
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project  (/var/lib/jenkins/workspace/Release/parent/pom.xml) has 1 error
+[ERROR]     Non-parseable POM /var/lib/jenkins/workspace/Release/parent/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</plugin>\n\t\t\t<groupId>... @138:13)  @ line 138, column 13 -> [Help 2]
