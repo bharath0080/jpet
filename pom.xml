@@ -231,15 +231,6 @@
 </project>
 
 mvn --batch-mode release:clean  release:prepare   release:perform
-[ERROR] [ERROR] Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM /var/lib/jenkins/workspace/Release/parent/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</plugin>\n\t\t\t<groupId>... @138:13)  @ line 138, column 13
- @ 
-[ERROR] The build could not read 1 project -> [Help 1]
-[ERROR]   
-[ERROR]   The project  (/var/lib/jenkins/workspace/Release/parent/pom.xml) has 1 error
-[ERROR]     Non-parseable POM /var/lib/jenkins/workspace/Release/parent/pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...</plugin>\n\t\t\t<groupId>... @138:13)  @ line 138, column 13 -> [Help 2]
-
-	
 	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gov.cms.hets</groupId>
@@ -259,7 +250,7 @@ mvn --batch-mode release:clean  release:prepare   release:perform
 	<description>Master Maven Build Scripts</description>
 	<modules>
 		<module>../enrichmentof271xml</module>
-		<!--<module>../hdtjibx</module>
+		<!--<module>../hdtjibx</module>		
 		<module>../pecos/java</module>
 		<module>../psrmtoactivespaces</module>
 		<module>../hets270271das</module>
@@ -272,6 +263,7 @@ mvn --batch-mode release:clean  release:prepare   release:perform
 		<module>../storedprocedure</module>-->
 	</modules>
 	<properties>
+		<project.scm.id>myscm</project.scm.id>
 		<maven.build.timestamp.format>yyyyMMdd'T'HHmmss</maven.build.timestamp.format>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -377,6 +369,7 @@ mvn --batch-mode release:clean  release:prepare   release:perform
 				<artifactId>maven-site-plugin</artifactId>
 				<version>${maven.site.plugin.version}</version>
 			</plugin>
+			<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
 	<version>2.4.2</version>
@@ -392,12 +385,9 @@ mvn --batch-mode release:clean  release:prepare   release:perform
           <version>1.8.1</version>
         </dependency>
        </dependencies>
+	   <plugin>
 		</plugins>
 	</build>
-	<properties>
-	<project.scm.id>my-scm-server</project.scm.id>
-	</properties>
-	
 	<profiles>
 		<profile>
 			<id>fortify-sca</id>
@@ -425,7 +415,6 @@ mvn --batch-mode release:clean  release:prepare   release:perform
 		</profile>
 	</profiles>
 </project>
-	
 	
 	<server>
       <id>myscm</id>
