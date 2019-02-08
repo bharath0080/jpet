@@ -228,9 +228,13 @@
     </profile>
   </profiles>
 
+	
+
 </project>
 
-mvn --batch-mode release:clean  release:prepare   release:perform
+
+
+
 	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gov.cms.hets</groupId>
@@ -362,32 +366,6 @@ mvn --batch-mode release:clean  release:prepare   release:perform
 				<url>http://10.232.110.202:8081/repository/maven-snapshots</url>
 		</snapshotRepository>	
 	</distributionManagement>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>${maven.site.plugin.version}</version>
-			</plugin>
-			<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-release-plugin</artifactId>
-	<version>2.4.2</version>
-	<configuration>
-	    <checkModificationExcludes>
-      		<checkModificationExclude>pom.xml</checkModificationExclude>
-	    </checkModificationExcludes>
-	</configuration>
-	<dependencies>
-        <dependency>
-          <groupId>org.apache.maven.scm</groupId>
-          <artifactId>maven-scm-provider-gitexe</artifactId>
-          <version>1.8.1</version>
-        </dependency>
-       </dependencies>
-	   <plugin>
-		</plugins>
-	</build>
 	<profiles>
 		<profile>
 			<id>fortify-sca</id>
@@ -410,32 +388,25 @@ mvn --batch-mode release:clean  release:prepare   release:perform
 							</execution>
 						</executions>
 					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-release-plugin</artifactId>
+						<version>2.4.2</version>
+						<configuration>
+							<checkModificationExcludes>
+								<checkModificationExclude>pom.xml</checkModificationExclude>
+							</checkModificationExcludes>
+						</configuration>
+						<dependencies>
+							<dependency>
+								<groupId>org.apache.maven.scm</groupId>
+								<artifactId>maven-scm-provider-gitexe</artifactId>
+								<version>1.8.1</version>
+							</dependency>
+						</dependencies>
+					</plugin>
 				</plugins>
 			</build>
 		</profile>
 	</profiles>
 </project>
-	
-	<server>
-      <id>myscm</id>
-      <username>besst_jenkins_rw</username>
-      <password>912b36a4c6b2e27b966f75e786ff3d18e36acd</password>
-    </server>
-		
-		[ERROR] [ERROR] Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM /var/lib/jenkins/workspace/vivek_test/parent/pom.xml: Unrecognised tag: 'plugin' (position: START_TAG seen ...</dependencies>\n\t   <plugin>... @155:13)  @ line 155, column 13
- @ 
-[ERROR] The build could not read 1 project -> [Help 1]
-[ERROR]   
-[ERROR]   The project  (/var/lib/jenkins/workspace/vivek_test/parent/pom.xml) has 1 error
-[ERROR]     Non-parseable POM /var/lib/jenkins/workspace/vivek_test/parent/pom.xml: Unrecognised tag: 'plugin' (position: START_TAG seen ...</dependencies>\n\t   <plugin>... @155:13)  @ line 155, column 13 -> [Help 2]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
-[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException
-Build step 'Execute shell' marked build as failure
-Finished: FAILURE
-
