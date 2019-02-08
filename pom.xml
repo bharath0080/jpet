@@ -229,3 +229,5 @@
   </profiles>
 
 </project>
+
+mvn --batch-mode release:clean  release:prepare   release:perform
