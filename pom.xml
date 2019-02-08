@@ -410,3 +410,10 @@
 		</profile>
 	</profiles>
 </project>
+
+
+
+
+The project  (/var/lib/jenkins/workspace/vivek_test/parent/pom.xml) has 1 error
+[ERROR]     Non-parseable POM /var/lib/jenkins/workspace/vivek_test/parent/pom.xml: Expected root element 'project' but found 'modelVersion' (position: START_TAG seen <modelVersion>... @1:14)  @ line 1, column 14 -> [Help 2]
+[ERROR] 
