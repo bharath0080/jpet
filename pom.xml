@@ -425,3 +425,11 @@ mvn --batch-mode release:clean  release:prepare   release:perform
 		</profile>
 	</profiles>
 </project>
+	
+	
+	<server>
+      <id>myscm</id>
+      <username>besst_jenkins_rw</username>
+      <password>912b36a4c6b2e27b966f75e786ff3d18e36acd</password>
+    </server>
+
