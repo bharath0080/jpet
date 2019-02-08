@@ -421,4 +421,21 @@ mvn --batch-mode release:clean  release:prepare   release:perform
       <username>besst_jenkins_rw</username>
       <password>912b36a4c6b2e27b966f75e786ff3d18e36acd</password>
     </server>
+		
+		[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM /var/lib/jenkins/workspace/vivek_test/parent/pom.xml: Unrecognised tag: 'plugin' (position: START_TAG seen ...</dependencies>\n\t   <plugin>... @155:13)  @ line 155, column 13
+ @ 
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project  (/var/lib/jenkins/workspace/vivek_test/parent/pom.xml) has 1 error
+[ERROR]     Non-parseable POM /var/lib/jenkins/workspace/vivek_test/parent/pom.xml: Unrecognised tag: 'plugin' (position: START_TAG seen ...</dependencies>\n\t   <plugin>... @155:13)  @ line 155, column 13 -> [Help 2]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
 
