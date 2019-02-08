@@ -424,3 +424,17 @@ The project  (/var/lib/jenkins/workspace/vivek_test/parent/pom.xml) has 1 error
 	
 	 Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.5.3:prepare (default-cli) on project parent: The provider given in the SCM URL could not be found: No such provider: 'https'. -> [Help 1]
 [ERROR] 
+] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.5.3:prepare (default-cli) on project parent: Unable to commit files
+[ERROR] Provider message:
+[ERROR] The git-add command failed.
+[ERROR] Command output:
+[ERROR] fatal: '/var/lib/jenkins/workspace/vivek_test/enrichmentof271xml/pom.xml' is outside repository
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
