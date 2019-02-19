@@ -732,3 +732,51 @@ Caused by: com.orientechnologies.orient.core.exception.OStorageException: Cannot
 -rw-r--r--. 1 nexus nexus    66560 Feb 18 22:05 v_7.pcl
 -rw-r--r--. 1 nexus nexus     1024 Feb 18 22:05 v.cpm
 -rw-r--r--. 1 nexus nexus    66560 Feb 18 
+
+
+
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 e.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 e.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 index.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 index.pcl
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 internal.cpm
+-rw-r--r--. 1 nexus nexus   132096 Feb 15 21:30 internal.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 manindex.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 manindex.pcl
+-rw-r--r--. 1 nexus nexus     8582 Feb 18 15:19 name_id_map.cm
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 ofunction.cpm
+-rw-r--r--. 1 nexus nexus 16778240 Feb 15 21:30 OFunction.name.hib
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 OFunction.name.him
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 OFunction.name.hit
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 OFunction.name.hnb
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 ofunction.pcl
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 orole.cpm
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 ORole.name.nbt
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 ORole.name.sbt
+-rw-r--r--. 1 nexus nexus   132096 Feb 15 21:30 orole.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 oschedule.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 oschedule.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 osequence.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 osequence.pcl
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 ouser.cpm
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 OUser.name.nbt
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 OUser.name.sbt
+-rw-r--r--. 1 nexus nexus   132096 Feb 15 21:30 ouser.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 v_1.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 v_1.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 v_2.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 v_2.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 v_3.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 v_3.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 v_4.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 v_4.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 v_5.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 v_5.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 v_6.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 v_6.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 v_7.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 v_7.pcl
+-rw-r--r--. 1 nexus nexus     1024 Feb 15 21:30 v.cpm
+-rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 v.pcl
+drwxr-xr-x. 2 root  root         6 Feb 15 16:09 zip
+
