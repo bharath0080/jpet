@@ -833,4 +833,21 @@ Caused by: java.io.IOException: No space left on device
 2019-02-19 02:34:39,838+0000 ERROR [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.osgi.BootstrapListener - Failed to initialize
 
 
+[root@ip-10-232-110-202 log]# systemctl status nexus
+? nexus.service - nexus service
+   Loaded: loaded (/etc/systemd/system/nexus.service; enabled; vendor preset: disabled)
+   Active: failed (Result: exit-code) since Mon 2019-02-18 21:34:41 EST; 2min 55s ago
+  Process: 11477 ExecStop=/opt/nexus-latest/bin/nexus stop (code=exited, status=0/SUCCESS)
+  Process: 11181 ExecStart=/opt/nexus-latest/bin/nexus start (code=exited, status=0/SUCCESS)
+ Main PID: 11322 (code=exited, status=255)
+
+Feb 18 21:34:33 ip-10-232-110-202.awscloud.cms.local systemd[1]: Starting nexus service...
+Feb 18 21:34:33 ip-10-232-110-202.awscloud.cms.local systemd[1]: Started nexus service.
+Feb 18 21:34:41 ip-10-232-110-202.awscloud.cms.local systemd[1]: nexus.service: main process exited, code=exited, status=255/n/a
+Feb 18 21:34:41 ip-10-232-110-202.awscloud.cms.local nexus[11477]: Shutting down nexus
+Feb 18 21:34:41 ip-10-232-110-202.awscloud.cms.local nexus[11477]: nexus is not running.
+Feb 18 21:34:41 ip-10-232-110-202.awscloud.cms.local systemd[1]: Unit nexus.service entered failed state.
+Feb 18 21:34:41 ip-10-232-110-202.awscloud.cms.local systemd[1]: nexus.service failed.
+[root@ip-10-232-110-202 log]#
+
 
