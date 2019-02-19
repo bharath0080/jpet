@@ -253,3 +253,5 @@ fabric  jetty  karaf  logback  nexus-default.properties  scripts  ssl
 -Dkaraf.startLocalConsole=false
 -Duser.timezone=UTC
 
+ cp /var/nexus/db/component/ /var/tmp/nexus/db/component/
+cp: omitting directory ‘/var/nexus/db/component/’
