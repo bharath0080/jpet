@@ -644,4 +644,48 @@ com.google.inject.ProvisionException: Unable to provision, see the following err
         at org.apache.felix.framework.FrameworkStartLevelImpl.run(FrameworkStartLevelImpl.java:308) [org.apache.felix.framework-5.6.1.jar:na]
 
 
+1) Error in custom provider, com.orientechnologies.orient.core.exception.OStorageException: Cannot open local storage '/var/tmp/nexus/db/component' with mode=rw^M
+        DB name="component"
+  while locating org.sonatype.nexus.repository.storage.ComponentDatabase$ProviderImpl
+  at / (via modules: org.sonatype.nexus.extender.modules.NexusBundleModule -> org.eclipse.sisu.space.SpaceModule)
+  while locating org.sonatype.nexus.orient.DatabaseInstance annotated with @com.google.inject.name.Named(value=component)
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.sonatype.nexus.orient.DatabaseInstance annotated with @com.google.inject.name.Named(value=component)
+
+1 error
+        at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1028) [na:na]
+        at com.sonatype.nexus.plugins.healthcheck.downloads.AssetDownloadCountStoreImpl.doStart(AssetDownloadCountStoreImpl.java:82) [na:na]
+        at org.sonatype.nexus.common.stateguard.StateGuardLifecycleSupport.start(StateGuardLifecycleSupport.java:67) [org.sonatype.nexus.common:3.3.1.01]
+        at org.sonatype.nexus.common.stateguard.MethodInvocationAction.run(MethodInvocationAction.java:39) [org.sonatype.nexus.common:3.3.1.01]
+        at org.sonatype.nexus.common.stateguard.StateGuard$TransitionImpl.run(StateGuard.java:191) [org.sonatype.nexus.common:3.3.1.01]
+        at org.sonatype.nexus.common.stateguard.TransitionsInterceptor.invoke(TransitionsInterceptor.java:56) [org.sonatype.nexus.common:3.3.1.01]
+        at org.sonatype.nexus.extender.NexusLifecycleManager.startComponent(NexusLifecycleManager.java:153) [org.sonatype.nexus.extender:3.3.1.01]
+        at org.sonatype.nexus.extender.NexusLifecycleManager.to(NexusLifecycleManager.java:93) [org.sonatype.nexus.extender:3.3.1.01]
+        at org.sonatype.nexus.extender.NexusContextListener.frameworkEvent(NexusContextListener.java:188) [org.sonatype.nexus.extender:3.3.1.01]
+        at org.apache.felix.framework.Felix.setActiveStartLevel(Felix.java:1429) [org.apache.felix.framework-5.6.1.jar:na]
+        at org.apache.felix.framework.FrameworkStartLevelImpl.run(FrameworkStartLevelImpl.java:308) [org.apache.felix.framework-5.6.1.jar:na]
+        at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: com.orientechnologies.orient.core.exception.OStorageException: Cannot open local storage '/var/tmp/nexus/db/component' with mode=rw^M
+        DB name="component"
+        at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.open(OAbstractPaginatedStorage.java:344) [na:na]
+        at com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx.open(ODatabaseDocumentTx.java:258) [na:na]
+        at org.sonatype.nexus.orient.DatabaseManagerSupport.connect(DatabaseManagerSupport.java:142) [na:na]
+        at org.sonatype.nexus.orient.DatabaseInstanceImpl.doStart(DatabaseInstanceImpl.java:56) [na:na]
+        at org.sonatype.goodies.lifecycle.LifecycleSupport.start(LifecycleSupport.java:104) [org.sonatype.goodies.lifecycle:2.2.3]
+        at org.sonatype.goodies.lifecycle.Lifecycles.start(Lifecycles.java:44) [org.sonatype.goodies.lifecycle:2.2.3]
+        at org.sonatype.nexus.orient.DatabaseManagerSupport.createInstance(DatabaseManagerSupport.java:259) [na:na]
+        at org.sonatype.nexus.orient.DatabaseManagerSupport.instance(DatabaseManagerSupport.java:233) [na:na]
+        at org.sonatype.nexus.repository.storage.ComponentDatabase$ProviderImpl.get(ComponentDatabase.java:55) [na:na]
+        at org.sonatype.nexus.repository.storage.ComponentDatabase$ProviderImpl.get(ComponentDatabase.java:1) [na:na]
+        at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81) [na:na]
+        at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72) [na:na]
+        at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65) [na:na]
+        at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115) [na:na]
+        at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133) [na:na]
+        at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68) [na:na]
+        at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63) [na:na]
+        at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62) [na:na]
+        at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46) [na:na]
+        at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092) [na:na]
+
 
