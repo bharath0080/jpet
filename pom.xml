@@ -619,4 +619,29 @@ cp: omitting directory ‘/var/nexus/db/component/’
 2019-02-19 02:51:53,745+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Start EVENTS
 2019-02-19 02:51:53,789+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.quartz.internal.QuartzSchedulerSPI - Thread-pool size: 20
 
+ NEW -> STARTED
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, com.orientechnologies.orient.core.exception.OStorageException: Cannot open local storage '/var/tmp/nexus/db/component' with mode=rw^M
+        DB name="component"
+  while locating org.sonatype.nexus.repository.storage.ComponentDatabase$ProviderImpl
+  at / (via modules: org.sonatype.nexus.extender.modules.NexusBundleModule -> org.eclipse.sisu.space.SpaceModule)
+  while locating org.sonatype.nexus.orient.DatabaseInstance annotated with @com.google.inject.name.Named(value=component)
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.sonatype.nexus.orient.DatabaseInstance annotated with @com.google.inject.name.Named(value=component)
+
+1 error
+        at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1028) [na:na]
+        at com.sonatype.nexus.plugins.healthcheck.downloads.AssetDownloadCountStoreImpl.doStart(AssetDownloadCountStoreImpl.java:82) [na:na]
+        at org.sonatype.nexus.common.stateguard.StateGuardLifecycleSupport.start(StateGuardLifecycleSupport.java:67) [org.sonatype.nexus.common:3.3.1.01]
+        at org.sonatype.nexus.common.stateguard.MethodInvocationAction.run(MethodInvocationAction.java:39) [org.sonatype.nexus.common:3.3.1.01]
+        at org.sonatype.nexus.common.stateguard.StateGuard$TransitionImpl.run(StateGuard.java:191) [org.sonatype.nexus.common:3.3.1.01]
+        at org.sonatype.nexus.common.stateguard.TransitionsInterceptor.invoke(TransitionsInterceptor.java:56) [org.sonatype.nexus.common:3.3.1.01]
+        at org.sonatype.nexus.extender.NexusLifecycleManager.startComponent(NexusLifecycleManager.java:153) [org.sonatype.nexus.extender:3.3.1.01]
+        at org.sonatype.nexus.extender.NexusLifecycleManager.to(NexusLifecycleManager.java:93) [org.sonatype.nexus.extender:3.3.1.01]
+        at org.sonatype.nexus.extender.NexusContextListener.frameworkEvent(NexusContextListener.java:188) [org.sonatype.nexus.extender:3.3.1.01]
+        at org.apache.felix.framework.Felix.setActiveStartLevel(Felix.java:1429) [org.apache.felix.framework-5.6.1.jar:na]
+        at org.apache.felix.framework.FrameworkStartLevelImpl.run(FrameworkStartLevelImpl.java:308) [org.apache.felix.framework-5.6.1.jar:na]
+
+
 
