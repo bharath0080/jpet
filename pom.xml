@@ -923,3 +923,10 @@ org.ops4j.pax.url.mvn.defaultRepositories=\
 
 	
 	 org.ops4j.pax.url.mvn.cfg
+	
+	config.properties             jre.properties                                   org.apache.karaf.command.acl.config   org.apache.karaf.command.acl.system  org.apache.karaf.log.cfg                  org.ops4j.pax.url.mvn.cfg  system.properties
+custom.properties             org.apache.felix.eventadmin.impl.EventAdmin.cfg  org.apache.karaf.command.acl.feature  org.apache.karaf.features.cfg        org.apache.karaf.management.cfg           profile.cfg
+java.util.logging.properties  org.apache.felix.fileinstall-deploy.cfg          org.apache.karaf.command.acl.jaas     org.apache.karaf.jaas.cfg            org.apache.karaf.service.acl.command.cfg  shell.init.script
+jmx.acl.cfg                   org.apache.karaf.command.acl.bundle              org.apache.karaf.command.acl.shell    org.apache.karaf.kar.cfg             org.apache.karaf.shell.cfg                startup.properties
+[root@ip-10-232-110-202 karaf]#
+
