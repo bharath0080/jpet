@@ -438,3 +438,203 @@ The project  (/var/lib/jenkins/workspace/vivek_test/parent/pom.xml) has 1 error
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 Build step 'Execute shell' marked build as failure
 Finished: FAILURE
+	
+	2019-02-19 00:42:21,100+0000 WARN  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4JInitialiser - Your logging framework class org.ops4j.pax.logging.slf4j.Slf4jLogger is not known - if it needs access to the standard println methods on the console you will need to register it by calling registerLoggingSystemPackage
+2019-02-19 00:42:21,105+0000 INFO  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J - Package org.ops4j.pax.logging.slf4j registered; all classes within it or subpackages of it will be allowed to print to System.out and System.err
+2019-02-19 00:42:21,108+0000 INFO  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J - Replaced standard System.out and System.err PrintStreams with SLF4JPrintStreams
+2019-02-19 00:42:21,110+0000 INFO  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J - Redirected System.out and System.err to SLF4J for this context
+2019-02-19 00:42:21,114+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder - Properties:
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   application-host='0.0.0.0'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   application-port='8081'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   fabric.etc='/opt/nexus-3.3.1-01/etc/fabric'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   jetty.etc='/opt/nexus-3.3.1-01/etc/jetty'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.base='/opt/nexus-3.3.1-01'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.data='/var/nexus'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.etc='/opt/nexus-3.3.1-01/etc/karaf'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.home='/opt/nexus-3.3.1-01'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.instances='/var/nexus/instances'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   logback.etc='/opt/nexus-3.3.1-01/etc/logback'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   nexus-args='/opt/nexus-3.3.1-01/etc/jetty/jetty.xml,/opt/nexus-3.3.1-01/etc/jetty/jetty-http.xml,/opt/nexus-3.3.1-01/etc/jetty/jetty-requestlog.xml'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   nexus-context-path='/'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   nexus-edition='nexus-pro-edition'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   nexus-features='nexus-pro-feature'
+2019-02-19 00:42:21,115+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   ssl.etc='/opt/nexus-3.3.1-01/etc/ssl'
+2019-02-19 00:42:21,116+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.Launcher - Java: 1.8.0_191, OpenJDK 64-Bit Server VM, Oracle Corporation, 25.191-b12
+2019-02-19 00:42:21,116+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.Launcher - OS: Linux, 3.10.0-957.5.1.el7.x86_64, amd64
+2019-02-19 00:42:21,116+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.Launcher - User: nexus, en, /home/nexus
+2019-02-19 00:42:21,116+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.Launcher - CWD: /opt/nexus-3.3.1-01
+2019-02-19 00:42:21,118+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.Launcher - TMP: /tmp/nexus
+2019-02-19 00:42:21,121+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting
+2019-02-19 00:42:21,128+0000 INFO  [FelixStartLevel] *SYSTEM org.eclipse.jetty.util.log - Logging initialized @3313ms
+2019-02-19 00:42:21,129+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/nexus-3.3.1-01/etc/jetty/jetty.xml
+2019-02-19 00:42:21,193+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/nexus-3.3.1-01/etc/jetty/jetty-http.xml
+2019-02-19 00:42:21,206+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/nexus-3.3.1-01/etc/jetty/jetty-requestlog.xml
+2019-02-19 00:42:21,219+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting: org.eclipse.jetty.server.Server@14a69ff1
+2019-02-19 00:42:21,221+0000 INFO  [jetty-main-1] *SYSTEM org.eclipse.jetty.server.Server - jetty-9.3.7.v20160115
+2019-02-19 00:42:21,269+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.osgi.BootstrapListener - Initializing
+2019-02-19 00:42:21,275+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.osgi.BootstrapListener - Loading OSS Edition
+2019-02-19 00:42:21,276+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.osgi.BootstrapListener - Installing: nexus-oss-edition/3.3.1.01
+2019-02-19 00:42:22,288+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.osgi.BootstrapListener - Installed: nexus-oss-edition/3.3.1.01
+2019-02-19 00:42:22,698+0000 INFO  [jetty-main-1] *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Global session timeout: 1800000 ms
+2019-02-19 00:42:22,699+0000 INFO  [jetty-main-1] *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Session-cookie prototype: name=NXSESSIONID
+2019-02-19 00:42:22,717+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.apache.tika.core [113]
+2019-02-19 00:42:22,782+0000 INFO  [jetty-main-1] *SYSTEM org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.2.Final
+2019-02-19 00:42:22,882+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.apache.tika.core [113]
+2019-02-19 00:42:22,883+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.common [135]
+2019-02-19 00:42:22,900+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.common [135]
+2019-02-19 00:42:22,901+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.hibernate.validator [120]
+2019-02-19 00:42:22,917+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.hibernate.validator [120]
+2019-02-19 00:42:22,918+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.commands [134]
+2019-02-19 00:42:22,938+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.commands [134]
+2019-02-19 00:42:22,938+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.crypto [136]
+2019-02-19 00:42:22,982+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.crypto [136]
+2019-02-19 00:42:22,983+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.jmx [143]
+2019-02-19 00:42:23,002+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.jmx [143]
+2019-02-19 00:42:23,003+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.orient [145]
+2019-02-19 00:42:23,068+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.orient [145]
+2019-02-19 00:42:23,068+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.security [152]
+2019-02-19 00:42:23,164+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.security [152]
+2019-02-19 00:42:23,165+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.base [129]
+2019-02-19 00:42:23,302+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.internal.metrics.MetricsModule - Metrics support configured
+2019-02-19 00:42:23,861+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.base [129]
+2019-02-19 00:42:23,861+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.blobstore-file [131]
+2019-02-19 00:42:23,893+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.blobstore-file [131]
+2019-02-19 00:42:23,894+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.cache [132]
+2019-02-19 00:42:23,909+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.cache [132]
+2019-02-18 00:42:23,909+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.capability [133]
+2019-02-19 00:42:23,929+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.capability [133]
+2019-02-19 00:42:23,929+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.email [137]
+2019-02-19 00:42:23,941+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.email [137]
+2019-02-19 00:42:23,944+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.extdirect [138]
+2019-02-19 00:42:23,975+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.extdirect [138]
+2019-02-19 00:42:23,975+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.httpclient [142]
+2019-02-19 00:42:23,989+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.httpclient [142]
+2019-02-19 00:42:23,989+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.oss-edition [146]
+2019-02-19 00:42:24,001+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.oss-edition [146]
+2019-02-19 00:42:24,002+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.rapture [148]
+2019-02-19 00:42:24,081+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.rapture [148]
+2019-02-19 00:42:24,082+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.rest-jackson2 [150]
+2019-02-19 00:42:24,094+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.rest-jackson2 [150]
+2019-02-19 00:42:24,094+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.scheduling [151]
+2019-02-19 00:42:24,113+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.scheduling [151]
+2019-02-19 00:42:24,114+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.siesta [154]
+2019-02-19 00:42:24,155+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.siesta [154]
+2019-02-19 00:42:24,156+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.swagger [157]
+2019-02-19 00:42:24,178+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.swagger [157]
+2019-02-19 00:42:24,179+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.upgrade [160]
+2019-02-19 00:42:24,199+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.upgrade [160]
+2019-02-19 00:42:24,203+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Start LOGGING
+2019-02-19 00:42:24,204+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.internal.log.LogbackLoggerOverrides - File: /var/nexus/etc/logback/logback-overrides.xml
+2019-02-19 00:42:24,206+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.internal.log.LogbackLogManager - Configuring
+2019-02-19 00:42:24,214+0000 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusContextListener - Installing: [nexus-oss-feature/3.3.1.01]
+2019-02-19 00:42:26,085+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.elasticsearch [195]
+2019-02-19 00:42:26,125+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.elasticsearch [195]
+2019-02-19 00:42:26,126+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.selector [206]
+2019-02-19 00:42:26,142+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.selector [206]
+2019-02-19 00:42:26,142+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.repository [204]
+2019-02-19 00:42:26,209+0000 ERROR [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusContextListener - Failed to initialize context
+org.osgi.framework.BundleException: Unable to cache bundle: mvn:org.jsoup/jsoup/1.9.1
+        at org.apache.felix.framework.Felix.installBundle(Felix.java:2975) [na:na]
+        at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:167) [na:na]
+        at org.eclipse.equinox.internal.region.BundleIdBasedRegion.installBundle0(BundleIdBasedRegion.java:117) [na:na]
+
+  at org.eclipse.equinox.internal.region.BundleIdBasedRegion.installBundle0(BundleIdBasedRegion.java:117) [na:na]
+        at org.eclipse.equinox.internal.region.BundleIdBasedRegion.installBundleAtLocation(BundleIdBasedRegion.java:97) [na:na]
+        at org.apache.karaf.features.internal.service.FeaturesServiceImpl.installBundle(FeaturesServiceImpl.java:1261) [na:na]
+        at org.apache.karaf.features.internal.service.Deployer.deploy(Deployer.java:739) [na:na]
+        at org.apache.karaf.features.internal.service.FeaturesServiceImpl.doProvision(FeaturesServiceImpl.java:1176) [na:na]
+        at org.apache.karaf.features.internal.service.FeaturesServiceImpl$1.call(FeaturesServiceImpl.java:1074) [na:na]
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+        at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: java.io.FileNotFoundException: /var/nexus/cache/bundle238/version0.0/revision.location (No space left on device)
+        at java.io.FileOutputStream.open0(Native Method) [na:1.8.0_191]
+        at java.io.FileOutputStream.open(FileOutputStream.java:270) [na:1.8.0_191]
+        at java.io.FileOutputStream.<init>(FileOutputStream.java:213) [na:1.8.0_191]
+        at java.io.FileOutputStream.<init>(FileOutputStream.java:162) [na:1.8.0_191]
+        at org.apache.felix.framework.util.SecureAction.getFileOutputStream(SecureAction.java:478) [na:na]
+        at org.apache.felix.framework.cache.BundleArchive.setRevisionLocation(BundleArchive.java:638) [na:na]
+        at org.apache.felix.framework.cache.BundleArchive.reviseInternal(BundleArchive.java:558) [na:na]
+        at org.apache.felix.framework.cache.BundleArchive.<init>(BundleArchive.java:153) [na:na]
+        at org.apache.felix.framework.cache.BundleCache.create(BundleCache.java:277) [na:na]
+        at org.apache.felix.framework.Felix.installBundle(Felix.java:2971) [na:na]
+        ... 11 common frames omitted
+2019-02-19 00:42:26,213+0000 ERROR [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.osgi.BootstrapListener - Failed to initialize
+java.lang.RuntimeException: org.osgi.framework.BundleException: Unable to cache bundle: mvn:org.jsoup/jsoup/1.9.1
+        at org.sonatype.nexus.extender.NexusContextListener.contextInitialized(NexusContextListener.java:175) [na:na]
+        at org.sonatype.nexus.bootstrap.osgi.ListenerTracker.addingService(ListenerTracker.java:47) [org.sonatype.nexus.bootstrap:3.3.1.01]
+        at org.sonatype.nexus.bootstrap.osgi.ListenerTracker.addingService(ListenerTracker.java:1) [org.sonatype.nexus.bootstrap:3.3.1.01]
+        at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941) [org.osgi.core-6.0.0.jar:na]
+        at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:870) [org.osgi.core-6.0.0.jar:na]
+        at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) [org.osgi.core-6.0.0.jar:na]
+        at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183) [org.osgi.core-6.0.0.jar:na]
+        at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:318) [org.osgi.core-6.0.0.jar:na]
+        at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:261) [org.osgi.core-6.0.0.jar:na]
+        at org.sonatype.nexus.bootstrap.osgi.BootstrapListener.contextInitialized(BootstrapListener.java:101) [org.sonatype.nexus.bootstrap:3.3.1.01]
+        at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:835) [org.eclipse.jetty.server:9.3.7.v20160115]
+        at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:534) [org.eclipse.jetty.servlet:9.3.7.v20160115]
+        at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:808) [org.eclipse.jetty.server:9.3.7.v20160115]
+        at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:346) [org.eclipse.jetty.servlet:9.3.7.v20160115]
+        at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1379) [org.eclipse.jetty.webapp:9.3.7.v20160115]
+        at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1341) [org.eclipse.jetty.webapp:9.3.7.v20160115]
+        at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:772) [org.eclipse.jetty.server:9.3.7.v20160115]
+        at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:263) [org.eclipse.jetty.servlet:9.3.7.v20160115]
+        at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:517) [org.eclipse.jetty.webapp:9.3.7.v20160115]
+        at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [org.eclipse.jetty.util:9.3.7.v20160115]
+        at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) [org.eclipse.jetty.util:9.3.7.v20160115]
+        at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:106) [org.eclipse.jetty.util:9.3.7.v20160115]
+        at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) [org.eclipse.jetty.server:9.3.7.v20160115]
+        at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92) [com.codahale.metrics.jetty9:3.0.2]
+        at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [org.eclipse.jetty.util:9.3.7.v20160115]
+        at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) [org.eclipse.jetty.util:9.3.7.v20160115]
+        at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114) [org.eclipse.jetty.util:9.3.7.v20160115]
+        at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) [org.eclipse.jetty.server:9.3.7.v20160115]
+        at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [org.eclipse.jetty.util:9.3.7.v20160115]
+        at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) [org.eclipse.jetty.util:9.3.7.v20160115]
+        at org.eclipse.jetty.server.Server.start(Server.java:405) [org.eclipse.jetty.server:9.3.7.v20160115]
+        at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:106) [org.eclipse.jetty.util:9.3.7.v20160115]
+        at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) [org.eclipse.jetty.server:9.3.7.v20160115]
+        at org.eclipse.jetty.server.Server.doStart(Server.java:372) [org.eclipse.jetty.server:9.3.7.v20160115]
+        at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [org.eclipse.jetty.util:9.3.7.v20160115]
+        at org.sonatype.nexus.bootstrap.jetty.JettyServer$JettyMainThread.run(JettyServer.java:274) [org.sonatype.nexus.bootstrap:3.3.1.01]
+Caused by: org.osgi.framework.BundleException: Unable to cache bundle: mvn:org.jsoup/jsoup/1.9.1
+        at org.apache.felix.framework.Felix.installBundle(Felix.java:2975) [na:na]
+        at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:167) [na:na]
+        at org.eclipse.equinox.internal.region.BundleIdBasedRegion.installBundle0(BundleIdBasedRegion.java:117) [na:na]
+        at org.eclipse.equinox.internal.region.BundleIdBasedRegion.installBundleAtLocation(BundleIdBasedRegion.java:97) [na:na]
+        at org.apache.karaf.features.internal.service.FeaturesServiceImpl.installBundle(FeaturesServiceImpl.java:1261) [na:na]
+        at org.apache.karaf.features.internal.service.Deployer.deploy(Deployer.java:739) [na:na]
+        at org.apache.karaf.features.internal.service.FeaturesServiceImpl.doProvision(FeaturesServiceImpl.java:1176) [na:na]
+        at org.apache.karaf.features.internal.service.FeaturesServiceImpl$1.call(FeaturesServiceImpl.java:1074) [na:na]
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_191]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+        at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: java.io.FileNotFoundException: /var/nexus/cache/bundle238/version0.0/revision.location (No space left on device)
+        at java.io.FileOutputStream.open0(Native Method) [na:1.8.0_191]
+        at java.io.FileOutputStream.open(FileOutputStream.java:270) [na:1.8.0_191]
+        at java.io.FileOutputStream.<init>(FileOutputStream.java:213) [na:1.8.0_191]
+        at java.io.FileOutputStream.<init>(FileOutputStream.java:162) [na:1.8.0_191]
+        at org.apache.felix.framework.util.SecureAction.getFileOutputStream(SecureAction.java:478) [na:na]
+        at org.apache.felix.framework.cache.BundleArchive.setRevisionLocation(BundleArchive.java:638) [na:na]
+        at org.apache.felix.framework.cache.BundleArchive.reviseInternal(BundleArchive.java:558) [na:na]
+        at org.apache.felix.framework.cache.BundleArchive.<init>(BundleArchive.java:153) [na:na]
+        at org.apache.felix.framework.cache.BundleCache.create(BundleCache.java:277) [na:na]
+        at org.apache.felix.framework.Felix.installBundle(Felix.java:2971) [na:na]
+        ... 11 common frames omitted
+2019-02-19 00:42:26,219+0000 WARN  [jetty-main-1] *SYSTEM org.eclipse.jetty.webapp.WebAppContext - Failed startup of context o.e.j.w.WebAppContext@164789e0{/,file:///opt/nexus-3.3.1-01/public/,STARTING}
+java.lang.RuntimeException: org.osgi.framework.BundleException: Unable to cache bundle: mvn:org.jsoup/jsoup/1.9.1
+        at org.sonatype.nexus.extender.NexusContextListener.contextInitialized(NexusContextListener.java:175) [na:na]
+        at org.sonatype.nexus.bootstrap.osgi.ListenerTracker.addingService(ListenerTracker.java:47) [org.sonatype.nexus.bootstrap:3.3.1.01]
+        at org.sonatype.nexus.bootstrap.osgi.ListenerTracker.addingService(ListenerTracker.java:1) [org.sonatype.nexus.bootstrap:3.3.1.01]
+        at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941) [org.osgi.core-6.0.0.jar:na]
+        at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:870) [org.osgi.core-6.0.0.jar:na]
+        at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) [org.osgi.core-6.0.0.jar:na]
+        at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183) [org.osgi.core-6.0.0.jar:na]
+        at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:318) [org.osgi.core-6.0.0.jar:na]
+        at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:261) [org.osgi.core-6.0.0.jar:na]
+        at org.sonatype.nexus.bootstrap.osgi.BootstrapListener.contextInitialized(BootstrapListener.java:101) [org.sonatype.nexus.bootstrap:3.3.1.01]
+        at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:835) [org.eclipse.jetty.server:9.3.7.v20160115]
+
+
