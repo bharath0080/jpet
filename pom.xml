@@ -780,3 +780,7 @@ Caused by: com.orientechnologies.orient.core.exception.OStorageException: Cannot
 -rw-r--r--. 1 nexus nexus    66560 Feb 15 21:30 v.pcl
 drwxr-xr-x. 2 root  root         6 Feb 15 16:09 zip
 
+
+[root@ip-10-232-110-202 component]# ps -eaf | grep orientdb
+root     17473  8592  0 22:21 pts/0    00:00:00 grep --color=auto orientdb
+
