@@ -733,6 +733,64 @@ Caused by: org.osgi.framework.BundleException: Unable to cache bundle: mvn:org.j
         at org.eclipse.equinox.internal.region.BundleIdBasedRegion.installBundleAtLocation(BundleIdBasedRegion.java:97) [na:na]
         at org.apache.karaf.features.internal.service.FeaturesServiceImpl.installBundle(FeaturesServiceImpl.java:1261) [na:na]
         at org.apache.karaf.features.internal.service.Deployer.deploy(Deployer.java:739) [na:na]
+	2019-02-19 00:42:26,547+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.repository [204]
+2019-02-19 00:42:26,547+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.core [194]
+2019-02-19 00:42:26,701+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.core [194]
+2019-02-19 00:42:26,702+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-repository-maven [199]
+2019-02-19 00:42:26,800+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-repository-maven [199]
+2019-02-19 00:42:26,800+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-audit-plugin [196]
+2019-02-19 00:42:27,056+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-audit-plugin [196]
+2019-02-19 00:42:27,057+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-coreui-plugin [197]
+2019-02-19 00:42:27,222+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-coreui-plugin [197]
+2019-02-19 00:42:27,223+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-script-plugin [201]
+2019-02-19 00:42:27,258+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-script-plugin [201]
+2019-02-19 00:42:27,259+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-repository-raw [200]
+2019-02-19 00:42:27,299+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-repository-raw [200]
+2019-02-19 00:42:27,301+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-repository-httpbridge [198]
+2019-02-19 00:42:27,323+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-repository-httpbridge [198]
+2019-02-19 00:42:27,324+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.quartz [203]
+2019-02-19 00:42:27,367+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.quartz [203]
+2019-02-19 00:42:27,367+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-ssl-plugin [202]
+2019-02-19 00:42:27,401+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-ssl-plugin [202]
+2019-02-19 00:42:27,422+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusContextListener - Uptime: 9 seconds and 587 milliseconds
+2019-02-19 00:42:27,423+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Stop LOGGING
+2019-02-19 00:42:28,608+0000 ERROR [pool-14-thread-1] *SYSTEM org.ops4j.pax.logging.logback.internal.PaxLoggingServiceImpl - ERROR in ch.qos.logback.core.rolling.helper.Compressor - Error occurred while compressing [/var/nexus/log/nexus.log32922694550.tmp] into [/var/nexus/log/nexus-2019-02-18.log.gz]. java.io.IOException: No space left on device
+2019-02-19 00:42:28,609+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable - java.io.IOException: No space left on device
+2019-02-19 00:42:28,610+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.io.FileOutputStream.writeBytes(Native Method)
+2019-02-19 00:42:28,610+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.io.FileOutputStream.write(FileOutputStream.java:326)
+2019-02-19 00:42:28,610+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+2019-02-19 00:42:28,610+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.util.zip.DeflaterOutputStream.write(DeflaterOutputStream.java:211)
+2019-02-19 00:42:28,610+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.util.zip.GZIPOutputStream.write(GZIPOutputStream.java:145)
+2019-02-19 00:42:28,610+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at ch.qos.logback.core.rolling.helper.Compressor.gzCompress(Compressor.java:205)
+2019-02-19 00:42:28,610+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at ch.qos.logback.core.rolling.helper.Compressor.compress(Compressor.java:55)
+2019-02-19 00:42:28,611+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at ch.qos.logback.core.rolling.helper.CompressionRunnable.run(CompressionRunnable.java:33)
+2019-02-19 00:42:28,611+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+2019-02-19 00:42:28,611+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2019-02-19 00:42:28,611+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+2019-02-19 00:42:28,611+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+2019-02-19 00:42:28,611+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+2019-02-19 00:42:28,611+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+2019-02-19 00:42:28,611+0000 ERROR [pool-14-thread-1] *SYSTEM java.lang.Throwable -     at java.lang.Thread.run(Thread.java:748)
+2019-02-19 00:48:06,309+0000 WARN  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4JInitialiser - Your logging framework class org.ops4j.pax.logging.slf4j.Slf4jLogger is not known - if it needs access to the standard println methods on the console you will need to register it by calling registerLoggingSystemPackage
+2019-02-19 00:48:06,311+0000 INFO  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J - Package org.ops4j.pax.logging.slf4j registered; all classes within it or subpackages of it will be allowed to print to System.out and System.err
+2019-02-19 00:48:06,314+0000 INFO  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J - Replaced standard System.out and System.err PrintStreams with SLF4JPrintStreams
+2019-02-19 00:48:06,315+0000 INFO  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J - Redirected System.out and System.err to SLF4J for this context
+2019-02-19 00:48:06,320+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder - Properties:
+2019-02-19 00:48:06,320+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   application-host='0.0.0.0'
+2019-02-19 00:48:06,320+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   application-port='8081'
+2019-02-19 00:48:06,320+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   fabric.etc='/opt/nexus-3.3.1-01/etc/fabric'
+2019-02-19 00:48:06,320+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   jetty.etc='/opt/nexus-3.3.1-01/etc/jetty'
+2019-02-19 00:48:06,321+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.base='/opt/nexus-3.3.1-01'
+2019-02-19 00:48:06,321+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.data='/var/nexus'
+2019-02-19 00:48:06,321+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.etc='/opt/nexus-3.3.1-01/etc/karaf'
+2019-02-19 00:48:06,321+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.home='/opt/nexus-3.3.1-01'
+2019-02-19 00:48:06,321+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.instances='/var/nexus/instances'
+2019-02-19 00:48:06,321+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   logback.etc='/opt/nexus-3.3.1-01/etc/logback'
+2019-02-19 00:48:06,321+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   nexus-args='/opt/nexus-3.3.1-01/etc/jetty/jetty.xml,/opt/nexus-3.3.1-01/etc/jetty/jetty-http.xml,/opt/nexus-3.3.1-01/etc/jetty/jetty-requestlog.xml'
+2019-02-19 00:48:06,321+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   nexus-context-path='/'
+2019-02-19 00:48:06,321+0000 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   nexus-edition='nexus-pro-edition'
+
+
 
 
 
