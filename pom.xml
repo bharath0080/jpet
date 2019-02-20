@@ -278,3 +278,22 @@ sonar.modules=enrichementof271xml
 enrichementof271xml.sonar.projectName=enrichmentof271xml
 enrichementof271xml.sonar.sources=enrichementof271xml/src
 # Comma-sepearated paths to directories with sources (required)
+
+
+[sonar_scan] $ /var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar/bin/sonar-scanner -Dsonar.host.url=http://10.232.110.197:9000 ******** -Denrichementof271xml.sonar.sources=enrichementof271xml/src -Dsonar.projectName=parent -Dsonar.projectVersion=2019.100.42 -Dsonar.projectKey=Jenkins -Denrichementof271xml.sonar.projectName=enrichmentof271xml -Dsonar.modules=enrichementof271xml -Dsonar.projectBaseDir=/var/lib/jenkins/workspace/sonar_scan
+INFO: Scanner configuration file: /var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar/conf/sonar-scanner.properties
+INFO: Project root configuration file: NONE
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION FAILURE
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 0.006s
+INFO: Final Memory: 1M/113M
+INFO: ------------------------------------------------------------------------
+ERROR: Error during SonarQube Scanner execution
+ERROR: The base directory of the module 'enrichementof271xml' does not exist: /var/lib/jenkins/workspace/sonar_scan/enrichementof271xml
+ERROR: 
+ERROR: Re-run SonarQube Scanner using the -X switch to enable full debug logging.
+WARN: Unable to locate 'report-task.txt' in the workspace. Did the SonarScanner succedeed?
+ERROR: SonarQube scanner exited with non-zero code: 1
+Finished: FAILURE
+
