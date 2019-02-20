@@ -268,3 +268,13 @@ ERROR: Re-run SonarQube Scanner using the -X switch to enable full debug logging
 WARN: Unable to locate 'report-task.txt' in the workspace. Did the SonarScanner succedeed?
 ERROR: SonarQube scanner exited with non-zero code: 1
 Finished: FAILURE
+
+
+#Required metsdata
+Sonar.ProjectKey=Jenkins
+Sonar.ProjectName=parent
+Sonar.ProjectVersion=2019.100.42
+sonar.modules=/var/lib/jenkins/workspace/sonar_scan/enrichementof271xml
+enrichementof271xml.sonar.projectname=enrichmentof271xml
+enrichementof271xml.source=/var/lib/jenkins/workspace/sonar_scan/enrichementof271xml/src
+# Comma-sepearated paths to directories with sources (required)
