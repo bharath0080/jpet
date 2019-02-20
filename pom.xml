@@ -236,21 +236,35 @@
 org.ops4j.pax.url.mvn.repositories=https://repo1.maven.org/maven2@id=central
 fabric  jetty  karaf  logback  nexus-default.properties  scripts  ssl
 
+Mentioned it in jenkins sonar scan
 
--Xmx2000M
--XX:MaxDirectMemorySize=2G
--XX:+UnlockDiagnosticVMOptions
--XX:+UnsyncloadClass
--XX:+LogVMOutput
--XX:LogFile=/var/tmp/nexus/log/jvm.log
--Djava.net.preferIPv4Stack=true
--Dkaraf.home=.
--Dkaraf.base=.
--Dkaraf.etc=etc/karaf
--Djava.util.logging.config.file=etc/karaf/java.util.logging.properties
--Dkaraf.data=/var/tmp/nexus
--Djava.io.tmpdir=/tmp/nexus
--Dkaraf.startLocalConsole=false
--Duser.timezone=UTC
+#Required metsdata
+Sonar.ProjectKey=Jenkins
+Sonar.ProjectName=parent
+Sonar.ProjectVersion=2019.100.42
+sonar.modules=enrichementof271xml
+enrichementof271xml.sonar.projectBaseDir=/var/lib/jenkins/workspace/sonar_scan/enrichmentof271xml/src/main/java/resources
 
+# Comma-sepearated paths to directories with sources (required)
+sonar.sources=src
  
+
+error 
+
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=31ms
+INFO: Process project properties
+ERROR: Invalid value of sonar.sources for Jenkins:enrichementof271xml
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION FAILURE
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 1.223s
+INFO: Final Memory: 10M/206M
+INFO: ------------------------------------------------------------------------
+ERROR: Error during SonarQube Scanner execution
+ERROR: The folder 'src' does not exist for 'Jenkins:enrichementof271xml' (base directory = /var/lib/jenkins/workspace/sonar_scan/enrichmentof271xml/src/main/java/resources)
+ERROR: 
+ERROR: Re-run SonarQube Scanner using the -X switch to enable full debug logging.
+WARN: Unable to locate 'report-task.txt' in the workspace. Did the SonarScanner succedeed?
+ERROR: SonarQube scanner exited with non-zero code: 1
+Finished: FAILURE
