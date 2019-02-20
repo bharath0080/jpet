@@ -271,10 +271,10 @@ Finished: FAILURE
 
 
 #Required metsdata
-Sonar.ProjectKey=Jenkins
-Sonar.ProjectName=parent
-Sonar.ProjectVersion=2019.100.42
-sonar.modules=/var/lib/jenkins/workspace/sonar_scan/enrichementof271xml
-enrichementof271xml.sonar.projectname=enrichmentof271xml
-enrichementof271xml.source=/var/lib/jenkins/workspace/sonar_scan/enrichementof271xml/src
+sonar.projectKey=Jenkins
+sonar.projectName=parent
+sonar.projectVersion=2019.100.42
+sonar.modules=enrichementof271xml
+enrichementof271xml.sonar.projectName=enrichmentof271xml
+enrichementof271xml.sonar.sources=enrichementof271xml/src
 # Comma-sepearated paths to directories with sources (required)
